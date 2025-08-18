@@ -1,0 +1,54 @@
+{
+  "title": "AtcsRegInfo",
+  "x-stoplight": {
+    "id": "hzzr3ocgczfnd"
+  },
+  "type": "object",
+  "required": [
+    "refNo",
+    "actionType"
+  ],
+  "properties": {
+    "refNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "86kham3o81csx"
+      },
+      "description": "ATCS scheme reference number ",
+      "maxLength": 10
+    },
+    "ctoCode": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "a47vbvum698ix"
+      },
+      "description": "CTO code",
+      "maxLength": 3
+    },
+    "actionType": {
+      "x-stoplight": {
+        "id": "qudw43ye1qejb"
+      },
+      "description": "Action Type:<br/>\nI - Insert<br/>\nU - Update<br/>\nD - Delete",
+      "enum": [
+        "I",
+        "U",
+        "D"
+      ]
+    },
+    "vrnList": {
+      "x-stoplight": {
+        "id": "1nnp5edp4qfwk"
+      },
+      "description": "List of registered vehicle registration numbers under ATCS scheme",
+      "type": "array",
+      "items": {
+        "x-stoplight": {
+          "id": "5bj7b0gh5j0ik"
+        },
+        "type": "string",
+        "example": "VM1010"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "title": "RoadAddress",
+  "x-stoplight": {
+    "id": "8jr8grdvci49d"
+  },
+  "type": "object",
+  "properties": {
+    "cityName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "jdi7mh65dvxfi"
+      },
+      "description": "City name"
+    },
+    "countryCode": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "1q6zzyxdzd835"
+      },
+      "description": "Country/Territory code"
+    },
+    "countrySubEntityId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "gfxvj0veh9sbc"
+      },
+      "description": "SubEntity ID"
+    },
+    "countrySubEntityName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "7xi8v3l7f72kh"
+      },
+      "description": "Country Sub-entity name"
+    },
+    "line1": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "1nsum7g4iwlyc"
+      },
+      "description": "Line 1 of the address<br>If specified, this field must not be blank or null."
+    },
+    "line2": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "5wjzx76h2y7x8"
+      },
+      "description": "Line 2 of the address"
+    },
+    "postalCode": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "qfh6zvra1q2g4"
+      },
+      "description": "Postal code identification"
+    }
+  }
+}

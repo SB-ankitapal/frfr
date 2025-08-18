@@ -1,0 +1,36 @@
+{
+  "title": "FacilitationVehicleInfo",
+  "x-stoplight": {
+    "id": "gvpg97ro4ccom"
+  },
+  "type": "object",
+  "required": [
+    "vrn"
+  ],
+  "properties": {
+    "vrn": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "3jyv3pot4tily"
+      },
+      "description": "Vehicle Registration Number",
+      "maxLength": 25
+    },
+    "gpsId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "usjk2sowlh58h"
+      },
+      "description": "GPS ID",
+      "maxLength": 35
+    },
+    "elockNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "2xfmd22mjmvh9"
+      },
+      "description": "E-Lock Number",
+      "maxLength": 35
+    }
+  }
+}

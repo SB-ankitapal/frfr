@@ -1,0 +1,22 @@
+{
+  "title": "tswId",
+  "x-stoplight": {
+    "id": "x4tsjgj67sset"
+  },
+  "type": "object",
+  "required": [
+    "tswId"
+  ],
+  "properties": {
+    "tswId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "zv6wf4r1akfpk"
+      },
+      "minLength": 10,
+      "maxLength": 10,
+      "example": "P492812390",
+      "description": "TSW ID"
+    }
+  }
+}

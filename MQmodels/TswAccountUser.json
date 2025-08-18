@@ -1,0 +1,299 @@
+{
+  "title": "TswAccountUser",
+  "x-stoplight": {
+    "id": "07w9bzcyu7gvq"
+  },
+  "type": "object",
+  "required": [
+    "tswId",
+    "type",
+    "name",
+    "phoneNo",
+    "enabled",
+    "locked",
+    "idCheckInd",
+    "activatedInd",
+    "profileVersion",
+    "delInd",
+    "displayStatus"
+  ],
+  "properties": {
+    "tswId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "0ncnnx5utras7"
+      },
+      "description": "TSW ID",
+      "minLength": 10,
+      "maxLength": 10,
+      "example": "P123892323"
+    },
+    "type": {
+      "x-stoplight": {
+        "id": "tm7rwtqd4a4fq"
+      },
+      "enum": [
+        "PERSON",
+        "EMPLOYEE",
+        "RP"
+      ],
+      "description": "The user type of this user.<br/>\n\nPossible value:<br/>\nPERSON <br/>\nEMPLOYEE <br/>\nRP <br/>\n"
+    },
+    "engFirstName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "3sp1qo9xf1uu2"
+      },
+      "description": "The English first name of this user",
+      "maxLength": 35
+    },
+    "engLastName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "a0qf3vkfc49tx"
+      },
+      "maxLength": 34,
+      "description": "The English surname of this user"
+    },
+    "chiFirstName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "20zmgj5jzt3c8"
+      },
+      "maxLength": 18,
+      "description": "The Chinese first name of this user"
+    },
+    "chiLastName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "7lhveh9n1fjoz"
+      },
+      "maxLength": 18,
+      "description": "The Chinese surname of this user"
+    },
+    "name": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "z89bfm67zgwhg"
+      },
+      "maxLength": 70,
+      "description": "The English name of this user",
+      "example": "Chan Tai Man"
+    },
+    "chiName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "tkywoz38lphy3"
+      },
+      "maxLength": 70,
+      "description": "The Chinese name of this user"
+    },
+    "phoneNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "s7e81w6ddablx"
+      },
+      "maxLength": 50,
+      "description": "The primary phone number of this user",
+      "example": "22223333"
+    },
+    "phoneNo2": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "hlfim06mwxtv8"
+      },
+      "maxLength": 20,
+      "description": "The alternative phone number of this user"
+    },
+    "faxNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "hlds40qwxulgh"
+      },
+      "maxLength": 50,
+      "description": "The fax number of this user"
+    },
+    "enabled": {
+      "x-stoplight": {
+        "id": "c00nout5oh655"
+      },
+      "description": "Whether this user account is enabled\n\n0 - disabled\n1 - enabled",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "locked": {
+      "x-stoplight": {
+        "id": "p1ev14s4b1mg8"
+      },
+      "description": "Whether this user account is locked <br/>\n\n0 - not locked<br/>\n1 - locked",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "lockedDatetime": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "pg4cf5igkx54t"
+      },
+      "format": "date-time",
+      "minLength": 19,
+      "maxLength": 19,
+      "example": "2024-08-25T19:30:00",
+      "description": "The time when this user account is locked"
+    },
+    "userGovInd": {
+      "x-stoplight": {
+        "id": "dz71qwidt7qlu"
+      },
+      "description": "Whether the created user is a government user.<br/>\n\nPossible value: <br/>\n0 - non-government user <br/>\n1 - government user",
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "testAcctInd": {
+      "x-stoplight": {
+        "id": "xt7jlb5p5ic38"
+      },
+      "enum": [
+        0,
+        1
+      ],
+      "description": "Whether the created user is a testing account.<br/>\n\nPossible value: <br/>\n0 - normal user <br/>\n1 - testing user"
+    },
+    "driverInd": {
+      "x-stoplight": {
+        "id": "trrn69e77ljll"
+      },
+      "enum": [
+        0,
+        1
+      ],
+      "description": "Whether the created user is a truck driver.<br/>\n\nPossible value: <br/>\n0 - not a truck driver <br/>\n1 - is a truck driver"
+    },
+    "idCheckInd": {
+      "x-stoplight": {
+        "id": "s5nmb97kf7bxo"
+      },
+      "enum": [
+        0,
+        1
+      ],
+      "description": "Whether the identity of this user is vetted<br/>\nPossible value: <br/>\n0 - ID not checked <br/>\n1 - ID checked\n\n"
+    },
+    "activatedInd": {
+      "x-stoplight": {
+        "id": "1ftm9vyrhjkea"
+      },
+      "enum": [
+        0,
+        1
+      ],
+      "description": "Whether this user account is activated<br/>\nPossible value: <br/>\n0 - Not activated <br/>\n1 - Activated"
+    },
+    "supportDocInd": {
+      "x-stoplight": {
+        "id": "x3as5px7vse14"
+      },
+      "enum": [
+        0,
+        1
+      ],
+      "description": "Pending submission of Company/Organisation's Authorisation Letter\n\nPossible value: <br/>\n0 - Pending <br/>\n1 - Submitted"
+    },
+    "addrLangInd": {
+      "x-stoplight": {
+        "id": "bkgjy5pkjz2vt"
+      },
+      "enum": [
+        "C",
+        "E"
+      ],
+      "description": "Address language indicator:<br/>\nC - Chinese<br/>\nE - English\n"
+    },
+    "engAddress": {
+      "$ref": "../CCMmodels/TswAddress.json",
+      "x-stoplight": {
+        "id": "6xbrv2s0ihxt7"
+      },
+      "description": "English address"
+    },
+    "chiAddress": {
+      "$ref": "../CCMmodels/TswAddress.json",
+      "x-stoplight": {
+        "id": "um0on4o2vjt3u"
+      },
+      "description": "Chinese address"
+    },
+    "email": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "tk4lp8ji6mot0"
+      },
+      "maxLength": 320,
+      "description": "Email"
+    },
+    "locale": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "3wo6erz1uqa2h"
+      },
+      "maxLength": 5,
+      "description": "The preferred language of this external user – en, zh_CN or zh_HK"
+    },
+    "companyTswId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "7tzxjtnjz0omn"
+      },
+      "maxLength": 11,
+      "minLength": 10,
+      "description": "Company TSW ID"
+    },
+    "idType": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "n1i1a7e25lp03"
+      },
+      "maxLength": 8,
+      "description": "The type of identity owned by this external user – HKID, PASSPORT, PRCEEP (PRC Exit Entry Permit) or OTHER"
+    },
+    "idNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "3idtwjxlvw0sy"
+      },
+      "description": "The identity number"
+    },
+    "profileVersion": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "u9d7c4dlaip24"
+      },
+      "description": "The version of the profile of this user",
+      "example": 1,
+      "format": "int64",
+      "minimum": 1
+    },
+    "delInd": {
+      "x-stoplight": {
+        "id": "7l2ns7z4s9d6q"
+      },
+      "enum": [
+        0,
+        1
+      ],
+      "description": "Whether this record is mark deleted <br/>\n\nPossible value: <br/>\n0 - Not deleted <br/>\n1 - Deleted\n\n"
+    },
+    "displayStatus": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "gukkrh61bbu3t"
+      },
+      "description": "Status of the user account"
+    }
+  }
+}

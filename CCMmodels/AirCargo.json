@@ -1,0 +1,44 @@
+{
+  "title": "AirCargo",
+  "x-stoplight": {
+    "id": "9h3lv3uac9mof"
+  },
+  "type": "object",
+  "properties": {
+    "flightNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "uhx9f2edlobcq"
+      },
+      "description": "Flight Number",
+      "maxLength": 70
+    },
+    "flightDate": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ouijnaespzewk"
+      },
+      "description": "Estimated Flight Departure/Arrival Date",
+      "format": "date",
+      "minLength": 10,
+      "maxLength": 10,
+      "example": "2024-08-25"
+    },
+    "awb": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ugk79oszjj9fc"
+      },
+      "description": "Air Waybill Number",
+      "maxLength": 70
+    },
+    "hwb": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "hcjcuir1tgpvy"
+      },
+      "description": "House Waybill Number",
+      "maxLength": 70
+    }
+  }
+}

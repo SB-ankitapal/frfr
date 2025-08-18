@@ -1,0 +1,41 @@
+{
+  "title": "Pageable",
+  "x-stoplight": {
+    "id": "6vop32q3cw4xy"
+  },
+  "type": "object",
+  "required": [
+    "pageSize",
+    "pageNo"
+  ],
+  "properties": {
+    "pageSize": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "160pge478vgb2"
+      },
+      "description": "Maximum items of each page"
+    },
+    "pageNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "32qv9lw4uh1r0"
+      },
+      "description": "Current Page"
+    },
+    "totalItems": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "6l8fy9owqc21m"
+      },
+      "description": "Total items (for response)"
+    },
+    "totalPages": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "oyluijev5g6v3"
+      },
+      "description": "Total page (for response)"
+    }
+  }
+}

@@ -4,6 +4,7 @@ x-stoplight:
 info:
   title: api
   version: '1.0'
+  description: cdfgvbhnm mjhuujnk
 servers:
   - url: 'http://localhost:3000'
 paths:
